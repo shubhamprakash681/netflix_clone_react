@@ -1,0 +1,39 @@
+.row {
+    // border: 2px solid darkcyan;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-top: 1vh;
+
+
+    > h2 {
+        // border: 2px solid green;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0 2vw;
+    }
+
+    > div {
+        display: flex;
+        align-items: center;
+        height: 280px;
+        width: 100%;
+        white-space: nowrap;
+        overflow: auto;
+        // background-color: #ffd8a8;
+
+        >img  {
+            width: 200px;
+            height: 200px;
+            margin: 1vmin;
+            padding: 1vmin;
+            cursor: pointer;
+        }
+        >img:hover {
+            width: 210px;
+            height: 210px;
+        }
+    }
+}

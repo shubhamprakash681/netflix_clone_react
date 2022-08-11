@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,700;0,900;1,600&family=Roboto:wght@400;500;700&display=swap');
+
+$hover-color: #e50914;
+$text-color: rgba(231, 224, 221, 0.897);
+$bg-color: rgb(30, 30, 30);
+
+$scroll-bar-back: rgb(59, 58, 58);
+$scroll-bar-front: grey;
+
+body, html {
+    // border: 1px solid blue;
+    width: 100vw;
+}
+
+* {
+    // border: 2px solid green;
+    color: $text-color;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    margin: 2px solid rgb(255, 36, 36);
+    background-color: $bg-color;
+
+    scrollbar-width: thin;
+    scrollbar-color: $scroll-bar-front $scroll-bar-front;
+
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+    ::-webkit-scrollbar-track {
+        background: $scroll-bar-back;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: $scroll-bar-front;
+        border-radius: 20px;
+        border: 5px solid $scroll-bar-back;
+    }
+    
+}
+
+
+button {
+    background-color: rgba(238, 12, 23, 0.925);
+    width: 9vmin;
+    padding: 0.8vmin;
+
+    // font-size: 1rem;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    // border: 1px solid $text-color;
+    color: rgba(245, 242, 240, 0.966);
+}
+
+.links {
+    text-decoration: none;
+}
+.links:hover {
+    color: $hover-color;
+}
+
+
+
+
+// .scrollable-div {
+//     display: flex;
+//     align-items: center;
+//     height: 100px;
+//     width: 300px;
+//     white-space: nowrap;
+//     overflow: auto;
+//     background-color: #ffd8a8;
+//   }
+//   .scrollable-div a {
+//     background-color: #e8590c;
+//     color: #fff;
+//     text-decoration: none;
+//     padding: 10px;
+//     margin: 5px; 
+//   }
